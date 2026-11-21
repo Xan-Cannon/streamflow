@@ -38,6 +38,9 @@ def plot_streamflow(dates, flows, sites):
     plt.grid(True)
     plt.tight_layout()
 
+    # save the figure in the project folder before showing it
+    plt.savefig("provo_streamflow.png", dpi=150, bbox_inches="tight")
+
     # show plot
     plt.show()
 
